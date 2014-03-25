@@ -22,8 +22,15 @@ $(document).ready(function(){
 		$(this).children(".item_name").show();	
 	});
 
-	//$(".item_action").css("height", "20px");
-	//$(".item_action").css("background-color", "white");
+	//Side Menu Functionality
+	$("#menu_selector").on("click",function(){
+		$(".side_menu").show("slide",{direction:"left"},400);
+	});
+		
+	$(".side_menu").mouseleave(function(){
+		$(this).hide("slide",{direction:"left"},400);
+		//console.log("out:");
+	});
 
 });
 
@@ -55,9 +62,6 @@ var change_dimensions = function(){
 	$(".item").css("height",height1 +"px");
 	$(".h2").css("height",height2 +"px");
 	$(".h3").css("height",height3 +"px");
-
-	//$()
-	//$(".item").css("margin-top", )
 };
 
 $(document).ready(change_dimensions());
@@ -67,36 +71,4 @@ $(window).resize(function(){
 	change_dimensions();
 });
 
-$(document).ready(function(){
-	$("#menu_selector").on("click",function(){
-		$(".side_menu").show("slide",{direction:"left"},400);
-		$(".side_menu").attr("value", "showing");
-		//console.log($(".side_menu").attr("value"));
-	});
 
-	//Hides the menu if you click elsewhere on the DOM
-	/*
-	$(document).on("click", function(){
-		var showing = $(".side_menu").attr("value")
-		if(showing == "showing"){
-			
-
-			$(document).on("click", function(){
-    			$(".side_menu").hide("slide",{direction:"left"},400);
-				$(".side_menu").attr("value", "hidden");
-			});
-			$('.side_menu').on("click", function(event){
-			    event.stopPropagation();
-			})
-
-
-
-
-
-		}
-		
-	});*/
-	
-	
-
-});

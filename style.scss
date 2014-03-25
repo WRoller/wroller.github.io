@@ -4,7 +4,10 @@
           box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
+body { 
+  font-family: sans-serif; 
+  margin: 10px;
+}
 
 .masonry {
   background-color: white;
@@ -27,11 +30,12 @@ body { font-family: sans-serif; }
       font-size:35px;
       background-color: rgba(0, 0, 0, 0.3);
       width:100%;
-
+      padding: 10px;
 
     }
 
     .item_action{
+      padding:10px;
       width:100%;
       color:white;
       font-size:20px;
@@ -49,7 +53,7 @@ body { font-family: sans-serif; }
 
       .glyphs{
         position:absolute;
-        bottom:0px;
+        bottom: 10px;
         width:100%;
 
         .glyphicon{
@@ -68,6 +72,7 @@ body { font-family: sans-serif; }
         .left{
           width:50px;
           float:left;
+
         }
         .right{
           width:50px;
@@ -93,32 +98,16 @@ body { font-family: sans-serif; }
   height:100px;
   position:absolute;
   left: 20px;
-  top:10px;
+  top:20px;
 
   .glyph_span{
     float:left;
     margin:10px;
   }
-
-  .glyphicon_lrg{
-    width:50px;
-    height:50px;
-    font-size: 25px !important;
-    color:#49B800;
-    border: 2px solid #49B800;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    
-  }
 }
 
-.glyphicon{
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
 
+/*Menu Control options*/
 .side_menu{
   z-index:2;
   position:absolute;
@@ -128,17 +117,52 @@ body { font-family: sans-serif; }
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   color:white;
 
+  #menu_logo{
+  height:100px;
+  width: 100px;
+  margin-top: 50px;
+  margin-left:100px;
+  margin-bottom:50px;
+  }
+
   .menu_item{
+    padding: 1px;
     text-align: center;
-    .glyphicon_lrg{
-      width:50px;
+
+    >span{
+      float:left;
+    }
+
+  }
+}
+
+
+/*Glyphicon Additions*/
+.glyphicon_lrg{
+    width:50px;
     height:50px;
-    font-size: 25px !important;
+    font-size: 25px;
     color:white;
     border: 2px solid white;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
-    }
+}
+
+.glyphicon_lrg_green{
+    width:50px;
+    height:50px;
+    font-size: 25px;
+    color:#49B800;
+    border: 3px solid #49B800;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px; 
   }
+
+/*Modifies glyphicon to create encapsulate in circle*/
+.glyphicon{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
