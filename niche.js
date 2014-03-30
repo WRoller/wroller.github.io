@@ -50,8 +50,8 @@ var change_dimensions = function(){
 	width_half = Math.round(width/2);
 	height_half = width_half;
 	// Sets the height of the navigation window
-	console.log(width_third+"width 3");
-	console.log(height_third+"heigh 3");
+	console.log(width_third+" width 3");
+	console.log(height_third+" heigh 3");
 
 	$(".item_action").css("height",height1/2 + "px");
 
@@ -60,6 +60,7 @@ var change_dimensions = function(){
 	$(".masonry").css("width",width+"px");
 	$(".masonry").css("height",height+"px");
 	$(".item").css("width",width1 +"px");
+	$(".item").css("height",height1 +"px");
 	$(".w2").css("width",width2 +"px");
 	$(".whalf").css("width", width_half +"px");
 	$(".hhalf").css("width", height_half +"px");
@@ -67,7 +68,7 @@ var change_dimensions = function(){
 	$(".hthird").css("height", height_third +"px");
 
 	$(".w3").css("width",width3 +"px");
-	$(".item").css("height",height1 +"px");
+	
 	$(".h2").css("height",height2 +"px");
 	$(".h3").css("height",height3 +"px");
 };
