@@ -36,7 +36,8 @@ $(document).ready(function(){
 
 // Function used to resize all components of the masonry layout
 var change_dimensions = function(){
-	width = 1500;
+	width = $(window).width();	
+	console.log(width);
 	height = Math.round(width/1.345);
 	width1 = Math.round(width*0.23);
 	height1 = width1;

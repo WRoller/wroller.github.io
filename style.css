@@ -37,24 +37,23 @@ body {
       border-bottom-color: rgba(255, 255, 255, 0.2);
       background-color: rgba(0, 0, 0, 0.5);
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
-      .masonry .item .item_action .glyphs {
+      .masonry .item .item_action img {
         position: absolute;
         bottom: 10px;
-        width: 100%; }
-        .masonry .item .item_action .glyphs .glyphicon {
-          width: 30px;
-          height: 30px;
-          margin-bottom: 3px;
-          color: white;
-          font-size: 100%;
-          border: 1px solid white;
-          border-radius: 15px;
-          -webkit-border-radius: 15px;
-          -moz-border-radius: 15px; }
-        .masonry .item .item_action .glyphs .left {
+        width: 100%;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 3px;
+        color: white;
+        font-size: 100%;
+        border: 1px solid white;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px; }
+        .masonry .item .item_action img .left {
           width: 50px;
           float: left; }
-        .masonry .item .item_action .glyphs .right {
+        .masonry .item .item_action img .right {
           width: 50px;
           float: right; }
     .masonry .item img {
@@ -81,16 +80,28 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   color: white; }
   .side_menu #menu_logo {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     margin-top: 50px;
     margin-left: 100px;
     margin-bottom: 50px; }
   .side_menu .menu_item {
     padding: 1px;
-    text-align: center; }
-    .side_menu .menu_item > span {
-      float: left; }
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    white-space: nowrap; }
+    .side_menu .menu_item .menu_icon {
+      float: left;
+      width: 100px;
+      height: 100px; }
+    .side_menu .menu_item div {
+      font-size: 30px;
+      margin-top: 28px;
+      height: 100px;
+      width: 150px;
+      font-color: #ABABAB !important;
+      text-decoration: none !important; }
 
 /*Glyphicon Additions*/
 .glyphicon_lrg {
@@ -108,7 +119,7 @@ body {
   height: 50px;
   font-size: 25px;
   color: #49B800;
-  border: 3px solid #49B800;
+  border: 2px solid #49B800;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px; }
