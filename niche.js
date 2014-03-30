@@ -37,7 +37,6 @@ $(document).ready(function(){
 // Function used to resize all components of the masonry layout
 var change_dimensions = function(){
 	width = $(window).width();	
-	console.log(width);
 	height = Math.round(width/1.345);
 	width1 = Math.round(width*0.23);
 	height1 = width1;
@@ -46,8 +45,13 @@ var change_dimensions = function(){
 	width3 = Math.round(width*0.5);
 	height3 = width3;
 	
+	width_third = Math.round(width/3);
+	height_third = width_third;
+	width_half = Math.round(width/2);
+	height_half = width_half;
 	// Sets the height of the navigation window
-	
+	console.log(width_third+"width 3");
+	console.log(height_third+"heigh 3");
 
 	$(".item_action").css("height",height1/2 + "px");
 
@@ -57,7 +61,10 @@ var change_dimensions = function(){
 	$(".masonry").css("height",height+"px");
 	$(".item").css("width",width1 +"px");
 	$(".w2").css("width",width2 +"px");
-	
+	$(".whalf").css("width", width_half +"px");
+	$(".hhalf").css("width", height_half +"px");
+	$(".wthird").css("width", width_third +"px");
+	$(".hthird").css("height", height_third +"px");
 
 	$(".w3").css("width",width3 +"px");
 	$(".item").css("height",height1 +"px");

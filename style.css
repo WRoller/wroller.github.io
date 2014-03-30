@@ -5,7 +5,8 @@
 
 body {
   font-family: sans-serif;
-  margin: 10px; }
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .masonry {
   background-color: white;
