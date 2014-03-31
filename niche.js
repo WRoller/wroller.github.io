@@ -36,8 +36,33 @@ $(document).ready(function(){
 
 // Function used to resize all components of the masonry layout
 var change_dimensions = function(){
-	width = $(window).width();	
+	// Window Width Initialized
+	// Less 5 to acct for 2.5px L & R margin
+	width = $(window).width() - 5;	
+	$(".masonry").css("max-width",width+"px");
+	$(".masonry").css("width",width+"px");
+
+	// Quarter Partitions
+	// Item defaults
+	quarter_size = Math.round((width - 20)/4) - 1 ;
+	$(".item").css("width",quarter_size +"px");
+	$(".item").css("height",quarter_size +"px");
+
+	// Third Partitions
+	third_size = Math.round((width-15)/3);
+	$(".wthird").css("width", third_size +"px");
+	$(".hthird").css("height", third_size +"px");
+
+	// Half Partitions
+	half_size = 2*quarter_size + 5;
+	$(".whalf").css("width",half_size +"px");
+	$(".hhalf").css("height",half_size +"px");
+	console.log(width);
+	console.log(quarter_size);
+	console.log(half_size);
+
 	height = Math.round(width/1.345);
+
 	width1 = Math.round(width*0.23);
 	height1 = width1;
 	width2 = Math.round(width*0.46);
@@ -50,22 +75,10 @@ var change_dimensions = function(){
 	width_half = Math.round(width/2);
 	height_half = width_half;
 	// Sets the height of the navigation window
-	console.log(width_third+" width 3");
-	console.log(height_third+" heigh 3");
 
+	// TO BE COMPLETED FOR HEIGHT
 	$(".item_action").css("height",height1/2 + "px");
 
-	$(".masonry").css("max-width",width+"px");
-	$(".masonry").css("max-height",height+"px");
-	$(".masonry").css("width",width+"px");
-	$(".masonry").css("height",height+"px");
-	$(".item").css("width",width1 +"px");
-	$(".item").css("height",height1 +"px");
-	$(".w2").css("width",width2 +"px");
-	$(".whalf").css("width", width_half +"px");
-	$(".hhalf").css("width", height_half +"px");
-	$(".wthird").css("width", width_third +"px");
-	$(".hthird").css("height", height_third +"px");
 
 	$(".w3").css("width",width3 +"px");
 	

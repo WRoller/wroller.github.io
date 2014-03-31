@@ -5,19 +5,16 @@
 
 body {
   font-family: sans-serif;
-  margin-left: 10px;
-  margin-right: 10px; }
+  margin-left: 2.5px;
+  margin-right: 2.5px; }
 
 .masonry {
   background-color: white;
   max-width: 2000px; }
   .masonry .item {
-    margin: 0px;
+    margin: 0px 2.5px 5px 2.5px;
     width: 25%;
-    height: 200px;
-    float: left;
-    border: 3px solid white;
-    border-color: white; }
+    float: left; }
     .masonry .item .item_name {
       position: absolute;
       bottom: 0px;
