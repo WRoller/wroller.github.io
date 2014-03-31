@@ -55,8 +55,8 @@ var change_dimensions = function(){
 
 	// Half Partitions
 	half_size = 2*quarter_size + 5;
-	$(".whalf").css("width",half_size +"px");
-	$(".hhalf").css("height",half_size +"px");
+	$(".w2").css("width",half_size +"px");
+	$(".h2").css("height",half_size +"px");
 	console.log(width);
 	console.log(quarter_size);
 	console.log(half_size);
